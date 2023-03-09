@@ -1,10 +1,11 @@
 import { Component } from "react";
 import Business from "../Business/Business";
+import "./BusinessList.css";
 
 class BusinessList extends Component {
   render() {
     return (
-      <div>
+      <div className="business-list">
         <Business />
         <Business />
         <Business />
