@@ -1,4 +1,5 @@
 import { Component } from "react";
+import "./Business.css";
 
 const business = {
   imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
@@ -15,22 +16,22 @@ const business = {
 class Business extends Component {
   render() {
     return (
-      <div>
-        <div>
+      <div className="business">
+        <div className="image-container">
           <img src={business.imageSrc} alt="pizza" />
         </div>
         <h2>{business.name}</h2>
-        <div>
-          <div>
+        <div className="business-information">
+          <div className="business-address">
             <p>{business.address}</p>
             <p>{business.city}</p>
             <p>
               {business.state} {business.zipCode}
             </p>
           </div>
-          <div>
+          <div className="business-reviews">
             <h3>{business.category}</h3>
-            <h3>{business.rating} stars</h3>
+            <h3 className="rating">{business.rating} stars</h3>
             <p>{business.reviewCount} reviews</p>
           </div>
         </div>
